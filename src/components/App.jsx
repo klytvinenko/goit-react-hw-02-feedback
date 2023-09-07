@@ -3,7 +3,7 @@ import { Section } from "./Section";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Statistics } from "./Statistics";
 import React from 'react';
-//import { Notification } from './Notification'; 
+import { Notification } from './Notification'; 
 
 export class App extends Component {
 
@@ -59,8 +59,8 @@ export class App extends Component {
           ></Statistics>
         </Section>
         ) : (
-           //<Notification message={'There is no feedback'}></Notification>
-           console.log("error")
+           <Notification message={'There is no feedback'}></Notification>
+           
         ) }
         
       </div>
